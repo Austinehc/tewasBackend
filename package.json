@@ -1,0 +1,16 @@
+{
+  "name": "tewas-backend",
+  "version": "1.0.0",
+  "description": "Backend API for TEWAS email sending.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.8",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  }
+}
