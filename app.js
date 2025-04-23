@@ -9,6 +9,11 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Root route for Render health check and browser access
+app.get('/', (req, res) => {
+    res.send('Backend is running!');
+});
+
 app.use(emailRouter);
 
 app.listen(PORT, () => {
