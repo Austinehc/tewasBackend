@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-router.post('/api/send-email', async (req, res) => {
+router.post('/', async (req, res) => {
     const { name, email, subject, message } = req.body;
     if (!name || !email || !subject || !message) {
         return res.status(400).json({ success: false, error: 'All fields are required.' });
